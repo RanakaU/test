@@ -1,0 +1,332 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Monstserra', sans-serif;
+    height: 100%;
+}
+
+* {box-sizing: border-box}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*-----------------------------------|
+|              Navbar                |
+|-----------------------------------*/
+
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.0625em	;
+    width: 25%; /* Four links of equal widths. Change this according to the no of links*/
+    text-align: center;
+}
+    @media screen and (min-device-width: 320px) and (max-device-width: 350px)
+    {
+        .navbar a{
+            width: 9em;
+        }
+    }
+
+    @media screen and (min-device-width: 351px) and (max-device-width: 400px)
+    {
+        .navbar a{
+            width:10em;
+        }
+    }
+
+    @media screen and (min-device-width: 401px) and (max-device-width: 700px)
+    {
+        .navbar a{
+            width: 12em;
+        }
+    }
+
+ 
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+
+
+
+
+/*---------------------------------|
+|               Logo               |
+|---------------------------------*/
+
+.logocontainer{
+    width: 75%;
+    height: 10em;
+    text-align: center;
+    padding: 2em;
+  
+}
+
+.logo{
+    width: 100%;
+    padding-left: 5em;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-device-width: 359px) and (max-device-width: 400px)
+{
+    .logocontainer{
+        padding: 1.5em;
+    }
+
+    .logo{
+        padding-left: 6em;
+        padding-right: 1em;
+    }
+
+
+}
+
+@media screen and (min-device-width: 401px) and (max-device-width: 449px)
+{
+    .logocontainer{
+        padding: 1.3em;
+
+    }
+
+    .logo{
+        padding-left: 7.75em;
+        padding-right: 1.5em;
+    }
+}
+
+@media screen and (min-device-width: 450px) and (max-device-width: 700px)
+{
+    .logocontainer{
+        padding: 2.5em;
+    }
+
+    .logo{
+        padding-left: 8em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (min-device-width: 701px) and (max-device-width: 1000px)
+{
+
+
+    .logocontainer{
+        padding: 2em;
+        height: 15em;
+
+    }
+
+
+    .logo{
+        padding-left: 16em;
+        padding-right: 6em;
+    }
+}
+
+
+
+@media screen and (min-device-width: 1001px) and (max-device-width: 1599px)
+{
+    .logocontainer{
+        height: 22em;
+        padding: 4em;
+    }
+
+    .logo{
+        padding-left: 21em;
+        padding-right: 5.75em;
+    }
+}
+
+
+@media screen and (min-device-width: 1600px) and (max-device-width: 2000px)
+{
+    .logocontainer{
+        height: 30em;
+        padding: 10em;
+    }
+
+    .logo{
+        padding-left: 42em;
+        padding-right: 13em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.info{
+    text-decoration: none;
+    color: #000;
+    padding-left: 3em;
+    padding-top: 3em;
+    font-size: 1em;
+}
+
+.info:hover{
+    transition: 1s;
+    color:#4CAF50 ;
+}
+
+.pic{
+    width: 50%;
+    height: auto;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: whitesmoke;
+
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: whitesmoke;
+
+}
+
+
+.container3 .pic{
+    width: 50%;
+    height: 20%;
+}
+
+
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1023px)
+{
+    .info{
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1499px)
+{
+    .info{
+        font-size: 2.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-device-width: 1500px) and (max-device-width: 5000px)
+{
+
+
+.container1 .info{
+    text-align: center;
+    font-size: 3em;
+    padding: 2em;
+    padding-left: 3em;
+
+}
+
+.container2{
+    margin-top: 2em;
+}
+
+.container2 .info{
+    text-align: start;
+    font-size: 3em;
+    padding: 2em;
+    padding-left: 3em;
+}
+
+.pic{
+    width: 15%;
+    height: 20%;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 3em;
+    background-color: whitesmoke;
+}
+
+.container3 .info{
+    text-align: start;
+    font-size: 3em;
+    padding: 2em;
+    padding-left: 3em;
+}
+
+.container3 .pic{
+    width: 15%;
+    padding-left: 2em;
+}
+
+
+
+}
+
+
+
+
+/*----------------------------------|
+|              footer               |
+|----------------------------------*/
+
+.footer{
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+#ul{
+    text-align: center;
+}

@@ -1,0 +1,425 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Monstserra', sans-serif;
+    height: 100%;
+}
+
+* {box-sizing: border-box}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------------------|
+|              Navbar                |
+|-----------------------------------*/
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.0625em	;
+    width: 25%; /* Four links of equal widths.*/
+    text-align: center;
+}
+    @media screen and (min-device-width: 320px) and (max-device-width: 350px)
+    {
+        .navbar a{
+            width: 9em;
+        }
+    }
+
+    @media screen and (min-device-width: 351px) and (max-device-width: 400px)
+    {
+        .navbar a{
+            width:10em;
+        }
+    }
+
+    @media screen and (min-device-width: 401px) and (max-device-width: 700px)
+    {
+        .navbar a{
+            width: 12em;
+        }
+    }
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+/*---------------------------------|
+|               Logo               |
+|---------------------------------*/
+
+.logocontainer{
+    width: 75%;
+    height: 10em;
+    text-align: center;
+    padding: 2em;
+}
+
+.logo{
+    width: 100%;
+    padding-left: 5em;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-device-width: 359px) and (max-device-width: 400px)
+{
+    .logocontainer{
+        padding: 1.5em;
+    }
+
+    .logo{
+        padding-left: 6em;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (min-device-width: 401px) and (max-device-width: 449px)
+{
+    .logocontainer{
+        padding: 1.3em;
+
+    }
+
+    .logo{
+        padding-left: 7.75em;
+        padding-right: 1.5em;
+    }
+}
+
+@media screen and (min-device-width: 450px) and (max-device-width: 700px)
+{
+    .logocontainer{
+        padding: 2.5em;
+    }
+
+    .logo{
+        padding-left: 8em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (min-device-width: 701px) and (max-device-width: 1000px)
+{
+    .logocontainer{
+        padding: 2em;
+        height: 15em;
+
+    }
+
+    .logo{
+        padding-left: 16em;
+        padding-right: 6em;
+    }
+}
+
+@media screen and (min-device-width: 1001px) and (max-device-width: 1599px)
+{
+    .logocontainer{
+        height: 22em;
+        padding: 4em;
+    }
+
+    .logo{
+        padding-left: 21em;
+        padding-right: 5.75em;
+    }
+}
+
+@media screen and (min-device-width: 1600px) and (max-device-width: 2000px)
+{
+    .logocontainer{
+        height: 30em;
+        padding: 10em;
+    }
+
+    .logo{
+        padding-left: 42em;
+        padding-right: 13em;
+    }
+}
+
+
+
+
+/*------------------------------------|
+|                Form                 |
+|------------------------------------*/
+
+/*https://www.w3schools.com/css/css_form.asp ( Responsive form )*/
+ 
+
+input[type=text], select{
+    width: 100%;
+    padding: 1em;
+    border: 2px solid black;
+    resize: vertical;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 5000px)
+{
+    input[type=text], select{
+        width: 80%;
+    }
+}
+
+label{
+    padding: 2em;
+    display: inline-block;
+}
+
+.outercontainer{
+    background-color: #555;
+    padding: 2em;
+}
+
+.formcontainer{
+    background-color: whitesmoke;
+    padding: 1em;
+    height: auto;
+}
+
+.col1{
+    float: left;
+    width: 25%;
+    margin-top: 1em;
+}
+
+.col2{
+    float: left;
+    width: 75%;
+    margin-top: 1em;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-device-width: 600px){
+    .col1,.col2{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+/*-----------------------------------|
+|              Picture               |
+|-----------------------------------*/
+
+.pic1{
+    width: 100%;
+    height: auto;
+}
+
+.piccont{
+    background-color: #555;
+}
+
+
+
+
+/*----------------------------------|
+|              footer               |
+|----------------------------------*/
+
+.footer{
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+#ul{
+    text-align: center;
+}
+
+
+
+
+/*--------------------------------|
+|             Panels              |
+|--------------------------------*/
+
+.panel2{
+    background-color: whitesmoke;
+    margin: 1em;
+    padding: 1em;
+}
+
+.panel3{
+    background-color: whitesmoke;
+    margin: 1em;
+    padding: 2em;
+    
+}
+
+.tvalue{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media screen and (min-device-width: 750px) and (max-device-width: 5000px)
+{
+    .tvalue{
+        font-size: 2em;
+    }
+}
+
+.tcost{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+@media screen and (min-device-width:319px) and (max-device-width: 750px )
+{
+    .tcost{
+        font-size: 1em;
+    }
+}
+
+
+
+
+/*-------------------------------|
+|            Buttons             |
+|-------------------------------*/
+
+.submit{
+    padding: 1em;
+    margin: 1em;
+    float: left;
+    font-size: 1em;
+}
+
+@media screen and (min-device-width: 700px) and (max-device-width: 5000px)
+{
+    #sumbit{
+        font-size: 1.3em;
+    }
+}
+
+#submit1{
+    padding: 1em;
+    margin: 1em 2em;
+    font-size: 1em;
+}
+
+@media screen and (min-device-width: 750px) and (max-device-width: 5000px)
+{
+    #submit1{
+        font-size: 1.3em;
+    }
+}
+
+.btncol1{
+    float: left;
+    width: 45%;
+    margin-top: 1em;
+}
+
+.btncol2{
+    float: left;
+    width: 45%;
+    margin-top: 1em;
+}
+
+.btncol3{
+    float: left;
+    width: 10%;
+}
+
+@media screen and (max-device-width: 600px){
+    .btncol1,.btncol2,.btncol3{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-device-width: 750px) and (max-device-width: 1023px)
+{
+    .btncol1,.btncol2{
+        width: 40%;
+    }
+}
+
+#loyaltybtn{
+    padding: 1.5em;
+    margin: 0 2em;
+    font-size: 1em;
+}
+
+.reservebtncont{
+    float: left;
+    width: 35%;
+    margin-top: 1em;
+}
+
+.loyaltybtncont{
+    float: left;
+    width: 45%;
+    margin-top: 1em;
+}
+
+/* Modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+.content{
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#cart{
+    width: 100%;
+    text-align: center;
+}

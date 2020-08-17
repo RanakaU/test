@@ -1,0 +1,594 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Monstserra', sans-serif;
+    height: 100%;
+}
+
+* {box-sizing: border-box}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*-----------------------------------|
+|              Navbar                |
+|-----------------------------------*/
+
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.0625em	;
+    width: 25%; /* Four links of equal widths. Change this according to the no of links*/
+    text-align: center;
+}
+    @media screen and (min-device-width: 320px) and (max-device-width: 350px)
+    {
+        .navbar a{
+            width: 9em;
+        }
+    }
+
+    @media screen and (min-device-width: 351px) and (max-device-width: 400px)
+    {
+        .navbar a{
+            width:10em;
+        }
+    }
+
+    @media screen and (min-device-width: 401px) and (max-device-width: 700px)
+    {
+        .navbar a{
+            width: 12em;
+        }
+    }
+
+ 
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+
+
+
+
+
+
+
+
+
+.maincontainer{
+    background-color: #555;
+    padding: 1em;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px)
+{
+    .maincontainer{
+        padding: 2em;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1500px)
+{
+    .maincontainer{
+        padding: 2.5em;
+    }
+}
+
+
+
+/*----------------------------------|
+|             Pictures              |
+|----------------------------------*/
+
+.pic1{
+    width: 100%;
+    height: auto;
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pic1:hover{
+    filter: blur(0);
+    transform: scale(1);
+}
+
+
+.pic2{
+    width: 100%;
+    height: auto;
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.pic2:hover{
+    filter: blur(0);
+    transform: scale(1);
+}
+
+.pic3{
+    width: 100%;
+    height: auto;
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.pic3:hover{
+    filter: blur(0);
+    transform: scale(1);
+}
+
+.pic4{
+    width: 100%;
+    height: auto;
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.pic4:hover{
+    filter: blur(0);
+    transform: scale(1);
+}
+
+
+
+
+
+/*-------------------------------------|
+|             Paragraphs               |
+|-------------------------------------*/
+
+
+#para1{
+    transition: 1s;
+    background-color: whitesmoke;
+    text-justify: distribute;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#para2{
+    transition: 1s;
+    background-color: whitesmoke;
+    text-justify: distribute;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#para3{
+    transition: 1s;
+    background-color: whitesmoke;
+    text-justify: distribute;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#para4{
+    transition: 1s;
+    background-color: whitesmoke;
+    text-justify: distribute;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#para1:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+#para2:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+#para3:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+#para4:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px)
+{
+    #para1{
+        font-size: 2em;
+    }
+
+    
+    #para2{
+        font-size: 2em;
+    }
+
+    
+    #para3{
+        font-size: 2em;
+    }
+
+    
+    #para4{
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (min-device-width: 1023px) and (max-device-width: 1500px)
+{
+    #para1{
+        font-size: 2.5em;
+    }
+
+    
+    #para2{
+        font-size: 2.5em;
+    }
+
+    
+    #para3{
+        font-size: 2.5em;
+    }
+
+    
+    #para4{
+        font-size: 2.5em;
+    }
+}
+
+
+
+/*---------------------------------------------|
+|                  Name Tags                   |
+|---------------------------------------------*/
+
+
+
+
+.text1{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    background-color: #4CAF50;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-left: 3.2em;
+    
+}
+
+.text2{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    background-color: #4CAF50;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-left: 6.55em;
+}
+
+.text3{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    background-color: #4CAF50;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-left: 4.8em;
+}
+
+
+.text4{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    background-color: #4CAF50;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-left: 6.2em;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 374px)
+{
+    .text1{
+        margin-left: 4.5em;
+    }
+
+    .text2{
+        margin-left: 7.8em;
+    }
+
+    .text3{
+        margin-left: 6.2em;
+    }
+
+    .text4{
+        margin-left: 7.3em;
+    }
+
+    
+}
+
+
+@media screen and (min-device-width: 375px) and (max-device-width: 410px)
+{
+    .text1{
+        margin-left: 4.8em;
+    }
+
+    .text2{
+        margin-left: 8.4em;
+    }
+
+    .text3{
+        margin-left: 6.6em;
+    }
+
+    .text4{
+        margin-left: 7.9em;
+    }
+
+    
+}
+
+
+@media screen and (min-device-width: 411px) and (max-device-width: 767px)
+{
+    .text1{
+        margin-left: 6.1em;
+    }
+
+    .text2{
+        margin-left: 9.7em;
+    }
+
+    .text3{
+        margin-left: 7.9em;
+    }
+
+    .text4{
+        margin-left: 9.2em;
+    }
+
+    
+}
+ 
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px)
+{
+    .text1{
+        margin-left: 5.2em;
+        font-size: 2em;
+    }
+
+    .text2{
+        margin-left: 8.5em;
+        font-size: 2em;
+    }
+
+    .text3{
+        margin-left: 6.8em;
+        font-size: 2em;
+    }
+
+    .text4{
+        margin-left: 8.2em;
+        font-size: 2em;
+    }
+
+    
+}
+ 
+
+
+@media screen and (min-device-width: 1023px) and (max-device-width: 1500px)
+{
+    .text1{
+        margin-left: 5.85em;
+        font-size: 2.5em;
+    }
+
+    .text2{
+        margin-left: 9.15em;
+        font-size: 2.5em;
+    }
+
+    .text3{
+        margin-left: 7.45em;
+        font-size: 2.5em;
+    }
+
+    .text4{
+        margin-left: 8.85em;
+        font-size: 2.5em;
+    }
+
+    
+}
+ 
+ 
+
+
+
+
+
+
+/*---------------------------------------|
+|             Desktop Design             |
+|---------------------------------------*/
+
+@media screen and (min-device-width: 1500px) and (max-device-width: 5000px)
+{
+    .maincontainer{
+        padding: 15em;
+    }
+
+    #para1{
+        font-size: 2.5em;
+    }
+
+    
+    #para2{
+        font-size: 2.5em;
+    }
+
+    
+    #para3{
+        font-size: 2.5em;
+    }
+
+    
+    #para4{
+        font-size: 2.5em;
+    }
+
+    .pic1cont{
+        background-color: white;
+        margin-bottom: 2em;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .pic1{
+        box-shadow: none;
+    }
+
+    .text1{
+        display: inline-block;
+        text-align: center;
+        padding: 2em;
+        background-color: white;
+        box-shadow: none;
+        font-size: 1.5em;
+        margin-left: 38%;
+    }
+
+    .pic2cont{
+        background-color: white;
+        margin-bottom: 2em;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .pic2{
+        box-shadow: none;
+    }
+
+    .text2{
+        display: inline-block;
+        text-align: center;
+        padding: 2em;
+        background-color: white;
+        box-shadow: none;
+        font-size: 1.5em;
+        margin-left: 43.5%;
+    }
+
+    .pic3cont{
+        background-color: white;
+        margin-bottom: 2em;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .pic3{
+        box-shadow: none;
+    }
+
+    .text3{
+        display: inline-block;
+        text-align: center;
+        padding: 2em;
+        background-color: white;
+        box-shadow: none;
+        font-size: 1.5em;
+        margin-left: 40.5%;
+    }
+
+    .pic4cont{
+        background-color: white;
+        margin-bottom: 2em;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .pic4{
+        box-shadow: none;
+    }
+
+    .text4{
+        display: inline-block;
+        text-align: center;
+        padding: 2em;
+        background-color: white;
+        box-shadow: none;
+        font-size: 1.5em;
+        margin-left: 43%;
+    }
+}
+
+
+
+/*----------------------------------|
+|              footer               |
+|----------------------------------*/
+
+.footer{
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+#ul{
+    text-align: center;
+}
+ 
+
+  
+ 

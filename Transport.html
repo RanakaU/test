@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>The Traveller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/myStylespg5.css" type="text/css">
+</head>
+<body>
+
+<!-- ------------------------   Nav Bar ------------------------------- -->
+
+<div class="logocontainer"><img class="logo" src="images/logo.png"></div>
+
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Attractions.html">Attractions</a>
+    <a href="Accommodation.html">Accommodation</a>
+    <a class="active" href="Transport.html">Transport</a>
+</div>
+
+<!-- -------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------- 1st panel ------------------------------------- -->
+
+<div class="outercontainer">
+    <div class="formcontainer">
+        <form method="GET">
+            <div class="row">
+                <div class="col1">
+                    <label for="taxitype">Taxi Type</label>
+                </div>
+
+                <div class="col2">
+                    <select onchange="UpdateOrder()" id="taxitype" name="taxitype" required>
+                        <option value="Tuk-Tuk">Tuk-Tuk</option>
+                        <option value="Mini-Car">Mini-Car</option>
+                        <option value="Luxury-Car">Luxury-Car</option>
+                        <option value="Luxury-Van">Luxury-Van</option>
+                        <option value="Luxury-Bus">Luxury-Bus</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="Fueltype">Fuel Type</label>
+                </div>
+
+                <div class="col2">
+                    <select onchange="UpdateOrder()" id="Fueltype" name="Fueltype">
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="Distance">Distance</label>
+                </div>
+
+                <div class="col2">
+                    <input onchange="UpdateOrder()" type="text" id="Distance" name="Distance"
+                           placeholder="Enter the distance of the trip (km)" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="Stay">Stay</label>
+                </div>
+
+                <div class="col2">
+                    <select onchange="UpdateOrder()" id="Stay" name="Stay">
+                        <option value="One-Way">One-Way</option>
+                        <option value="Two-Way">Two-Way</option>
+                        <option value="Overnight">Overnight</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="Startingp">Starting point</label>
+                </div>
+
+                <div class="col2">
+                    <input onchange="UpdateOrder()" type="text" id="Startingp" name="Startingp"
+                           placeholder="Your starting address" required>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- -------------------------------------- panel 2 --------------------------------------- -->
+
+    <div class="panel2">
+        <div class="row">
+            <div class="col1">
+                <label for="taxi_type_display">Taxi Type</label>
+            </div>
+
+            <div class="col2">
+                <input type="text" id="taxi_type_display" name="taxi_type_display" readonly>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col1">
+                <label for="fuel_type_display">Fuel Type</label>
+            </div>
+
+            <div class="col2">
+                <input type="text" id="fuel_type_display" name="fuel_type_display" readonly>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col1">
+                <label for="distance_display">Distance (km)</label>
+            </div>
+
+            <div class="col2">
+                <input type="text" id="distance_display" name="distance_display" readonly>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col1">
+                <label for="stay_display">Stay</label>
+            </div>
+
+            <div class="col2">
+                <input type="text" id="stay_display" name="stay_display" readonly>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col1">
+                <label for="address_display">Starting Address</label>
+            </div>
+
+
+            <div class="col2">
+                <input type="text" id="address_display" name="address_display" readonly>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <label for="currentcost">Current Cost (LKR)</label>
+            </div>
+
+            <div class="col2">
+                <input type="text" id="currentcost" name="currentcost" readonly>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="btncol1">
+                <button type="submit" name="submit" class="submit" onclick="AddToCart()">Add to order
+                </button>
+            </div>
+
+
+            <div class="btncol2">
+                <button type="submit" name="submit" class="submit" onclick="AddToFav()">Favourite</button>
+            </div>
+
+            <div class="btncol3">
+                <button type="submit" name="submit" class="submit" onclick="OrderFav()">Order Favourite
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+
+    <!-- -------------------------------------------- Panel 3 ------------------------------------- -->
+
+    <div class="panel3">
+
+        <table id="cart">
+            <tr>
+                <th>Order</th>
+                <th>Cost</th>
+            </tr>
+        </table>
+
+        <div>
+        <span class="total_cost">Total Cost (LKR) = </span><span id="total_cost"></span>
+        </div>
+
+        <div>
+            <button onclick="Reserve()" type="submit" name="submit1" id="submit1">Reserve</button>
+            <button type="submit" name="submit" id="loyaltybtn" onclick="CheckLoyalty()">Check loyalty</button>
+        </div>
+
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+
+    <!--  ----------------- Modal --------------------- -->
+
+
+  <!--  <div class="modal" id="modal">
+
+        <div class="content">
+
+            <span class="close">&times;</span>
+
+            <div class="row">
+                <div class="col1">
+                    <label for="taxi_type_display">Taxi Type</label>
+                </div>
+
+                <div class="col2">
+                    <input type="text" id="taxi_type_display" name="taxi_type_display">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col1">
+                    <label for="fuel_type_display">Fuel Type</label>
+                </div>
+
+                <div class="col2">
+                    <input type="text" id="fuel_type_display" name="fuel_type_display">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col1">
+                    <label for="distance_display">Distance (km)</label>
+                </div>
+
+                <div class="col2">
+                    <input type="text" id="distance_display" name="distance_display">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col1">
+                    <label for="stay_display">Stay</label>
+                </div>
+
+                <div class="col2">
+                    <input type="text" id="stay_display" name="stay_display">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col1">
+                    <label for="address_display">Starting Address</label>
+                </div>
+
+
+                <div class="col2">
+                    <input type="text" id="address_display" name="address_display">
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+</div>
+<div class="piccont">
+    <img src="images/transpic.jpg" alt="train" class="pic1">
+</div>
+
+<div class="footer">
+    <footer>
+        <ul id="ul">
+            <li>For further information feel free to <a href="contactUs.html">Contact Us</a></li>
+            <li>Author: Ranaka Ubeysekera</li>
+        </ul>
+    </footer>
+</div>
+
+<script src="scripts/mainScript.js"></script>
+
+</body>
+</html>
